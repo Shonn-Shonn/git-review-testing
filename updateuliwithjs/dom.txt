@@ -1,0 +1,45 @@
+DOM methods to create h1
+
+
+document.createElement('h1');
+
+
+a new text node for h1
+document.createTextNode('Thi is a testing app,grab some ideas')
+
+
+call -> document.createElement('h1') -> add node 
+.appendChild(...)
+
+add this inside the div
+.appendChild(...)
+
+DOM -> elements -> nodes -> <></>
+(represents the updated page content)
+<steps by steps...so, consume time a lot>
+
+SOURCE CODE -> initial page content 
+
+What about declarative approach?
+adjust only needs over instructions
+
+Imperative programming -> step by step 
+
+
+
+<script type="text/javascript">
+      const app = document.getElementById('app');
+      ReactDOM.render(<h1>Develop. Preview. Ship. 🚀</h1>, app);
+</script>
+
+
+I got a syntax error.
+Babel is coming to save:)
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+and change to type=text/jsx
+
+Now I will get declarative react code...
+
