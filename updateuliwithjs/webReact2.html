@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+        const app = document.getElementById('app');
+        function Smallsubheader({title}){
+          if(title){
+             return <h2>{title}</h2>
+          }else{
+             return <h2>Title?It is fiction.</h2>
+          }
+        }
+        function Header(){
+           const trigger = true;
+           return (
+            <div> 
+                 <h1>A submarine is a boat that travels underwater</h1>
+                 <Smallsubheader title="A ocean in a submarine"/>
+                 <Smallsubheader/>
+                 {trigger ? 'Exploration' : 'Adventure stories'}
+            </div>
+           )
+        }
+        ReactDOM.render(<Header/>,app);
+    </script>
+</body>
+</html>
